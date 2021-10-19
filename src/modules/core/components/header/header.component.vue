@@ -1,6 +1,8 @@
 <template>
-  HEADER
+    <div @click="goHome()" class="navigate-to-home">
+        <span>Book App</span>
+    </div>
 </template>
 
 <script src="./header.component.ts"></script>
-<style src="./header.component.scss"></style>
+<style lang="scss" src="./header.component.scss"></style>
