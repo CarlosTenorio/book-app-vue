@@ -1,7 +1,8 @@
 <template>
     <h1>Find a Book</h1>
-    <input />
-    <button>Search</button>
+    <input v-model="search" />
+    <p>Message is: {{ search }}</p>
+    <button @click="search()">Search</button>
 </template>
 
 <script src="./find-book-page.component.ts"></script>

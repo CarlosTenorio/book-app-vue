@@ -1,6 +1,12 @@
 export default {
     name: 'FindBookPageComponent',
     props: {},
-    data() {},
-    methods: {}
+    data() {
+        return {
+            search: ''
+        };
+    },
+    methods: {
+        search() {}
+    }
 };

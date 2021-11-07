@@ -4,13 +4,16 @@
     "private": true,
     "scripts": {
         "start": "vue-cli-service serve",
-        "build": "vue-cli-service build",
+        "build": "vue-cli-service build --mode dev",
+        "build-prod": "vue-cli-service build --mode prod",
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
+        "axios": "^0.24.0",
         "core-js": "^3.6.5",
         "vue": "^3.0.0",
-        "vue-router": "^4.0.12"
+        "vue-router": "^4.0.12",
+        "vuex": "^4.0.2"
     },
     "devDependencies": {
         "@babel/plugin-proposal-class-properties": "^7.14.5",
