@@ -1,15 +1,12 @@
-import { createApp } from 'vue';
-import { createStore } from 'vuex';
+import { createStore, createLogger } from 'vuex';
+import booksStore from './modules/books/store';
 
-const store = createStore({
-    state() {
-        return {
-            count: 0
-        };
+const debug = process.env.NODE_ENV !== 'production';
+
+export default createStore({
+    modules: {
+        booksStore
     },
-    mutations: {
-        increment(state) {
-            state.count++;
-        }
-    }
+    strict: debug,
+    plugins: debug ? [createLogger()] : []
 });

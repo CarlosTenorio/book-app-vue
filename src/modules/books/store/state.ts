@@ -4,3 +4,5 @@ const state = () =>
     ({
         books: []
     } as StateInterface);
+
+export default state;

@@ -1,7 +1,7 @@
-import { BookInterface } from '../models';
+import { BookInterface, StateInterface } from '../models';
 
 const mutations = {
-    setBooks(state: any, books: BookInterface[]) {
+    setBooks(state: StateInterface, books: BookInterface[]) {
         state.books = books;
     }
 };
