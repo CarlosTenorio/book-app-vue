@@ -1,5 +1,9 @@
 # book-app-vue
 
+Real world Vue 3 app.
+
+Book Management with Google API
+
 ## Project setup
 
 ```
