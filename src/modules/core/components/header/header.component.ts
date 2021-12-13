@@ -1,8 +1,10 @@
+import { router } from '@/main';
+
 export default {
     name: 'Header',
     methods: {
         goHome() {
-            console.log('goHome!');
+            router.push('/books');
         }
     }
 };

@@ -1,6 +1,6 @@
 <template>
     <h1>Find a Book</h1>
-    <input v-model="search" />
+    <input v-model="search" v-on:keyup.enter="searchBook()" />
     <p>Message is: {{ search }}</p>
     <button @click="searchBook()">Search</button>
     <ul>
