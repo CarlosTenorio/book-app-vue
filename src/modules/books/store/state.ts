@@ -1,8 +1,9 @@
-import { BookInterface, StateInterface } from '../models';
+import { StateInterface } from '../models';
 
 const state = () =>
     ({
-        books: []
+        books: [],
+        loadingBooks: false
     } as StateInterface);
 
 export default state;

@@ -4,4 +4,4 @@
 </template>
 
 <script lang="ts" src="./collection-page.component.ts"></script>
-<style lang="scss" src="./collection-page.component.scss"></style>
+<style lang="scss" src="./collection-page.component.scss" scoped></style>
