@@ -1,5 +1,6 @@
-import actions from '../../store/actions';
+import store from '@/store';
 import { defineComponent } from 'vue';
+import { mapGetters } from 'vuex';
 
 export default defineComponent({
     name: 'FindBookPageComponent',
@@ -12,7 +13,10 @@ export default defineComponent({
     },
     methods: {
         searchBook() {
-            actions.searchBook(this.search);
+            store.dispatch('booksStore/searchBook', this.search);
         }
+    },
+    computed: {
+        ...mapGetters({ books: 'booksStore/getBooks' })
     }
 });

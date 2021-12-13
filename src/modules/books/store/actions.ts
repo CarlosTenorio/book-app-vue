@@ -1,12 +1,13 @@
 import axios, { AxiosResponse } from 'axios';
-import { BookInterface } from '../models';
+import { RequestInterface } from '../models';
 
 const actions = {
-    async searchBook({ commit }: any) {
-        axios.get(`${process.env.GOOGLE_API}/books/v1/volumes`).then((request: AxiosResponse<BookInterface[]>) => {
-            console.log('response', request.data);
-            commit('setProducts', request.data);
-        });
+    async searchBook({ state, commit }: any, queryTitle: string) {
+        axios
+            .get(`${process.env.VUE_APP_GOOGLE_API}/books/v1/volumes?q=${queryTitle}`)
+            .then((request: AxiosResponse<RequestInterface>) => {
+                commit('setBooks', request.data.items);
+            });
     }
 };
 export default actions;
