@@ -5,6 +5,7 @@ import * as VueRouter from 'vue-router';
 import CollectionPage from './modules/books/containers/collection-page/collection-page.component.vue';
 import FindBookPageComponent from './modules/books/containers/find-book-page/find-book-page.component.vue';
 import store from './store';
+import i18n from './i18n';
 
 const routes = [
     { path: '/books', component: CollectionPage },
@@ -23,4 +24,5 @@ export const router = VueRouter.createRouter({
 createApp(App)
     .use(router)
     .use(store)
+    .use(i18n)
     .mount('#app');

@@ -9,16 +9,17 @@ Features:
 -   API calls
 -   Arquitecture based on modules to scale apps
 -   Encapsulated styles
--   Hadle async data
+-   Handle async data
 -   Multiple environments
 -   VUEX 4 (state management for Vue 3)
+-   Translations
 
 TODO
 
 -   Custom Library
 -   E2E Tests
 -   Forms and Validations
--   Translations
+-   Change language
 -   Unit Tests
 
 ## Project setup
