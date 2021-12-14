@@ -13,13 +13,13 @@ Features:
 -   Multiple environments
 -   VUEX 4 (state management for Vue 3)
 -   Translations
+-   Change language
 
 TODO
 
--   Custom Library
+-   Add external UI Library
 -   E2E Tests
 -   Forms and Validations
--   Change language
 -   Unit Tests
 
 ## Project setup
