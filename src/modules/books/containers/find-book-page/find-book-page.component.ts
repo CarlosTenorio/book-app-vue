@@ -2,10 +2,11 @@ import store from '@/store';
 import { defineComponent } from 'vue';
 import { mapGetters } from 'vuex';
 import SpinnerComponent from '@/modules/shared/components/spinner/spinner.component.vue';
+import BookPreviewComponent from '@/modules/books/components/book-preview-list/book-preview-list.component.vue';
 
 export default defineComponent({
     name: 'FindBookPageComponent',
-    components: { SpinnerComponent },
+    components: { SpinnerComponent, BookPreviewComponent },
     props: {},
     setup() {},
     data() {

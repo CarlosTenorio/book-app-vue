@@ -1,7 +1,7 @@
 import { router } from '@/main';
 
 export default {
-    name: 'CollectionPage',
+    name: 'CollectionPageComponent',
     methods: {
         goToSearch() {
             router.push('/books/search');

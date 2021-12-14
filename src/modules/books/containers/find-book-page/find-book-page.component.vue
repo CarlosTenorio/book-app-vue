@@ -3,11 +3,7 @@
     <input v-model="search" v-on:keyup.enter="searchBook()" />
     <button @click="searchBook()">Search</button>
     <SpinnerComponent v-if="loadingBooks" />
-    <ul v-if="!loadingBooks">
-        <li v-for="book in books" :key="book.id">
-            {{ book.volumeInfo.title }}
-        </li>
-    </ul>
+    <BookPreviewComponent v-if="!loadingBooks" :books="books" />
 </template>
 
 <script src="./find-book-page.component.ts"></script>
