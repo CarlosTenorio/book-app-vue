@@ -1,8 +1,25 @@
 # book-app-vue
 
-Real world Vue 3 app.
+Real world Vue 3 App.
 
 Book Management with Google API
+
+Features:
+
+-   API calls
+-   Arquitecture based on modules to scale apps
+-   Encapsulated styles
+-   Hadle async data
+-   Multiple environments
+-   VUEX 4 (state management for Vue 3)
+
+TODO
+
+-   Custom Library
+-   E2E Tests
+-   Forms and Validations
+-   Translations
+-   Unit Tests
 
 ## Project setup
 
