@@ -1,8 +1,7 @@
 <template>
-    <p>Translation Test: {{ $t('books.message') }}</p>
-    <h1>Find a Book</h1>
+    <h1>{{ $t('books.title-collection') }}</h1>
     <input v-model="search" v-on:keyup.enter="searchBook()" />
-    <button @click="searchBook()">Search</button>
+    <button @click="searchBook()">{{ $t('books.search-button') }}</button>
     <SpinnerComponent v-if="loadingBooks" />
     <BookPreviewComponent v-if="!loadingBooks" :books="books" />
 </template>

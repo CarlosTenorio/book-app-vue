@@ -1,5 +1,7 @@
 {
     "books": {
-        "message": "こんにちは、世界"
+        "title-collection": "私のコレクション",
+        "search-button": "本を検索",
+        "title-find": "本を探す"
     }
 }

@@ -1,5 +1,7 @@
 {
     "books": {
-        "message": "hello i18n !!"
+        "title-collection": "Title Collection",
+        "search-button": "Search book",
+        "title-find": "Find a book"
     }
 }

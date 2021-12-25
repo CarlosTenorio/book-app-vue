@@ -1,6 +1,6 @@
 <template>
-    <h1>My Collection</h1>
-    <button @click="goToSearch()">Search Book 1</button>
+    <h1>{{ $t('books.title-collection') }}</h1>
+    <button @click="goToSearch()">{{ $t('books.search-button') }}</button>
 </template>
 
 <script lang="ts" src="./collection-page.component.ts"></script>
