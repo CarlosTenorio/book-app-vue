@@ -2,6 +2,7 @@
     "books": {
         "title-collection": "Title Collection",
         "search-button": "Search book",
-        "title-find": "Find a book"
+        "title-find": "Find a book",
+        "search-required": "Search field is required"
     }
 }

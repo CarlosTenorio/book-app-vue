@@ -2,6 +2,7 @@
     "books": {
         "title-collection": "私のコレクション",
         "search-button": "本を検索",
-        "title-find": "本を探す"
+        "title-find": "本を探す",
+        "search-required": "検索フィールドは必須です"
     }
 }
