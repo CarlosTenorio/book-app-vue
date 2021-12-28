@@ -1,10 +1,10 @@
 <template>
     <h1>{{ $t('books.title-collection') }}</h1>
-    <Form @submit="onSubmit">
+    <Form @submit="onSubmit" v-slot="{ meta }">
         <Field name="search" type="text" v-model="search" :rules="validateForm" />
         <ErrorMessage name="search" />
         <div>
-            <button :disabled="invalid">
+            <button :disabled="(meta && !meta.valid) || loadingBooks">
                 {{ $t('books.search-button') }}
             </button>
         </div>
